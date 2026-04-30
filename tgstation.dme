@@ -3932,6 +3932,7 @@
 #include "code\modules\atmospherics\machinery\components\electrolyzer\electrolyzer.dm"
 #include "code\modules\atmospherics\machinery\components\electrolyzer\electrolyzer_reactions.dm"
 #include "code\modules\atmospherics\machinery\components\fusion\_hfr_defines.dm"
+#include "code\modules\atmospherics\machinery\components\fusion\hfr_circuitry.dm"
 #include "code\modules\atmospherics\machinery\components\fusion\hfr_core.dm"
 #include "code\modules\atmospherics\machinery\components\fusion\hfr_fuel_datums.dm"
 #include "code\modules\atmospherics\machinery\components\fusion\hfr_main_processes.dm"

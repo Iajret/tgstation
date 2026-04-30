@@ -145,6 +145,15 @@
 	/// Reference to the core of our machine
 	var/obj/machinery/atmospherics/components/unary/hypertorus/core/connected_core
 
+/obj/machinery/hypertorus/interface/Initialize(mapload)
+	. = ..()
+	AddComponent(/datum/component/usb_port, list(
+		/obj/item/circuit_component/hfr_control/power,
+		/obj/item/circuit_component/hfr_control/core,
+		/obj/item/circuit_component/hfr_control/fuel,
+		/obj/item/circuit_component/hfr_control/moderator,
+	))
+
 /obj/machinery/hypertorus/interface/Destroy()
 	if(connected_core)
 		connected_core = null
